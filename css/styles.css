@@ -151,6 +151,7 @@ h2 {
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
+    color: var(--dark);
 
 }
 
@@ -185,6 +186,7 @@ h2 {
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: center;
+    color: var(--dark);
 }
 
 .team-item-text {
@@ -205,13 +207,13 @@ h2 {
 }
 
 .portfolio-item-title {
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-text-align: center;
-
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
     text-align: left;
+    color: var(--dark);
 
 }
 
