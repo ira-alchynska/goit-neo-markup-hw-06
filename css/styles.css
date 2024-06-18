@@ -21,7 +21,7 @@ body {
     line-height: 24px;
     letter-spacing: 2%;
     font-weight: 400;
-    font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 ul {
@@ -43,18 +43,18 @@ h2 {
 /* header */
 
 .logo-header {
-    font-family: Raleway, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--dark);
+    text-transform: uppercase;
+    color: var(--cta);
 }
 
-.logo-header span {
-
-    color: var(--cta);
+.logo-colored {
+    color: var(--dark);
 }
 
 /* navigation */
@@ -77,6 +77,10 @@ h2 {
 
 
 /* address */
+
+.address-header {
+    font-style: normal;
+}
 
 .address-item-link {
     font-size: 16px;
@@ -104,13 +108,14 @@ h2 {
 .hero-title {
     font-size: 56px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
 }
 
 .hero-button {
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -136,6 +141,7 @@ h2 {
     line-height: 40px;
     letter-spacing: 0.02em;
     text-align: center;
+    color: var(--dark);
 
 }
 
@@ -146,6 +152,10 @@ h2 {
     letter-spacing: 0.02em;
     text-align: left;
 
+}
+
+.feature-item-text {
+    letter-spacing: 0.02em;
 }
 
 
@@ -162,9 +172,11 @@ h2 {
 .team-title {
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
+    color: var(--dark);
 }
 
 .team-item-title {
@@ -177,6 +189,7 @@ h2 {
 
 .team-item-text {
     text-align: center;
+    letter-spacing: 0.02em;
 }
 
 
@@ -185,18 +198,26 @@ h2 {
 .portfolio-title {
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
 }
 
 .portfolio-item-title {
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.02em;
+text-align: center;
+
     text-align: left;
 
 }
 
 .portfolio-item-text {
     text-align: left;
+    letter-spacing: 0.02em;
 
 }
 
@@ -209,19 +230,21 @@ h2 {
 
 .footer-text {
     color: var(--light-bgc);
+    letter-spacing: 0.02em;
 }
 
 .logo-footer {
-    font-family: Raleway, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     text-align: left;
-    color: var(--white);
+    color: var(--cta);
 }
 
-.logo-footer span {
+.logo-footer-white {
 
-    color: var(--cta);
+    color: var(--light-bgc);
 }
