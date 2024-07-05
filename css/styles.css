@@ -431,6 +431,7 @@ img {
 }
 
 .portfolio-item {
+    cursor: pointer;
     width: calc((100% - 2 * 24px) / 3);
     transition: box-shadow 250ms var(--function-animation);
 }
@@ -458,15 +459,6 @@ img {
     width: 100%;
     height: 100%;
     background-color: #4D5AE5;
-    transform: translateY(100%);
-    transition: transform 250ms var(--function-animation);
-}
-
-.portfolio-item:hover .overlay-description {
-    transform: translateY(0%);
-}
-
-.overlay-text {
     color: var(--white);
     padding: 40px 32px;
     font-size: 16px;
@@ -474,10 +466,18 @@ img {
     letter-spacing: 0.02em;
     height: 100%;
     width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms var(--function-animation);
 }
 
+ .overlay-description:hover {
+    transform: translateY(0%);
+}
+
+
+
 .portfolio-card-content {
-    padding: 32px 0;
+    padding: 32px 16px;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
