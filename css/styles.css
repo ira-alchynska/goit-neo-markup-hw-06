@@ -474,8 +474,10 @@ img {
 /* footer */
 
 .footer {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: var(--dark);
-    padding: 100px 0;
+    padding: 100px 120px;
   }
 
   .footer-text {
