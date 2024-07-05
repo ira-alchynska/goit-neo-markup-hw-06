@@ -577,3 +577,7 @@ footer .container {
 .footer-socials .socials-link:focus {
     background-color: var(--footer-hover);
 }
+
+.logo-light {
+    color: #F4F4FD;
+}
