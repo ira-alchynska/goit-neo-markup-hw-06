@@ -41,10 +41,9 @@
     <section class="section hero">
       <div class=" container hero-flex">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button" type="button">Order Service</button>
+        <button class="hero-button open-modal-btn" type="button">Order Service</button>
       </div>
     </section>
-
     <section class="section features">
       <div class="container">
         <h2 class="feature-title hidden">Features</h2>
@@ -355,7 +354,6 @@
         </ul>
       </div>
     </section>
-
   </main>
 
   <!-- Footer -->
@@ -402,8 +400,78 @@
           </li>
         </ul>
       </div>
+      <div class="sign">
+        <p class="subscribe-title">Subscribe</p>
+        <form class="footer-form">
+          <input class="subscribe-field" type="email" name="subscribe" placeholder="E-mail">
+          <button class="footer-btn" type="submit">
+            <span class="footer-btn-text">Subscribe</span>
+            <svg class="footer-btn-icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="btn-close" data-modal-close>
+        <svg class="modal-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="form-box">
+            Name
+            <input class="input-form" type="text" name="user-name" required>
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="form-box">
+            Phone
+            <input class="input-form" type="tel" name="phone" required>
+            <svg class="form-icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="form-box">
+            Email
+            <input class="input-form" type="email" name="mail" required>
+            <svg class="form-icon" width="15" height="12">
+              <use href="./images/icons.svg#icon-envelop"></use>
+            </svg>
+          </label>
+          <label class="form-box">
+            Comment
+            <textarea class="form-comment" name="comment" placeholder="Text input"></textarea>
+          </label>
+          <div class="modal-field-checkbox">
+            <input class="modal-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
+              value="true" required />
+            <label class="modal-checkbox-label" for="user-privacy">
+              <span class="modal-checkbox-custom">
+                <svg class="modal-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-privacy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="button">
+            <button class="modal-submit-button" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <button class="open-modal-btn">Open Modal</button>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
