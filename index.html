@@ -404,7 +404,7 @@
         <p class="subscribe-title">Subscribe</p>
         <form class="footer-form">
           <label class="subscribe-label" for="subscribe">
-          <input class="subscribe-field" type="email" name="subscribe" placeholder="E-mail">
+          <input class="subscribe-field" type="email" id="subscribe" name="subscribe" placeholder="E-mail">
         </label>
           <button class="footer-btn" type="submit">
             <span class="footer-btn-text">Subscribe</span>
@@ -426,30 +426,30 @@
       <div class="modal-content">
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="form-box">
+          <label class="form-box" for="user-name">
             Name
-            <input class="input-form" type="text" name="user-name" required>
+            <input class="input-form" type="text" id="user-name" name="user-name" required>
             <svg class="form-icon" width="12" height="12">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </label>
-          <label class="form-box">
+          <label class="form-box" for="phone">
             Phone
-            <input class="input-form" type="tel" name="phone" required>
+            <input class="input-form" type="tel" id="phone" name="phone" required>
             <svg class="form-icon" width="13" height="13">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </label>
-          <label class="form-box">
+          <label class="form-box" for="email">
             Email
-            <input class="input-form" type="email" name="mail" required>
+            <input class="input-form" type="email" id="email" name="mail" required>
             <svg class="form-icon" width="15" height="12">
               <use href="./images/icons.svg#icon-envelop"></use>
             </svg>
           </label>
-          <label class="form-box">
+          <label class="form-box" for="comment">
             Comment
-            <textarea class="form-comment" name="comment" placeholder="Text input"></textarea>
+            <textarea class="form-comment" id="comment" name="comment" placeholder="Text input"></textarea>
           </label>
           <div class="modal-field-checkbox">
             <input class="modal-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
