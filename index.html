@@ -426,43 +426,44 @@
       <div class="modal-content">
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="form-box" for="user-name">
-          <span>Name</span>  
-            <input class="input-form" type="text" id="user-name" name="user-name" required>
-            <svg class="form-icon" width="12" height="12">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </label>
-          <label class="form-box" for="phone">
-          <span>Phone</span>  
+          <div class="input-wrapper"> <label class="form-box" for="user-name">Name  </label>
+         
+              <input class="input-form" type="text" id="user-name" name="user-name" required>
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+          </div>
+         <div class="input-wrapper"> <label class="form-box" for="phone">
+          Phone   </label>
             <input class="input-form" type="tel" id="phone" name="phone" required>
             <svg class="form-icon" width="13" height="13">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-          </label>
-          <label class="form-box" for="email">
-          <span>Email</span>  
+        </div>
+         <div class="input-wrapper"> <label class="form-box" for="email">
+          Email  </label>
             <input class="input-form" type="email" id="email" name="mail" required>
             <svg class="form-icon" width="15" height="12">
               <use href="./images/icons.svg#icon-envelop"></use>
             </svg>
-          </label>
-          <label class="form-box" for="comment">
-           <span>Comment</span>
-            <textarea class="form-comment" id="comment" name="comment" placeholder="Text input"></textarea>
-          </label>
+        </div>
+         <div class="input-wrapper"> <label class="form-box" for="comment">
+          Comment </label>
+           <textarea class="form-comment" id="comment" name="comment" placeholder="Text input"></textarea>
+       </div>
+         
           <div class="modal-field-checkbox">
             <input class="modal-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
               value="true" required />
-            <label class="modal-checkbox-label" for="user-privacy">
+            <label class="modal-checkbox-label" for="user-privacy">  <span class="privacy-text"> I accept the terms and conditions of the</span>
+              <a class="modal-privacy-link" href="#">Privacy Policy</a> </label>
               <span class="modal-checkbox-custom">
                 <svg class="modal-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-privacy-link" href="#">Privacy Policy</a>
-            </label>
+            
+          
           </div>
           <div class="button">
             <button class="modal-submit-button" type="submit">Send</button>
