@@ -573,10 +573,14 @@ footer .container {
 }
 
 .subscribe-field {
+    color: var(--white);
+    line-height: 2;
+    letter-spacing: 0.04em; 
     width: 264px;
     height: 40px;
-    padding: 8px 16px;
+    padding-left: 16px; 
     border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: var(--radius);
     background-color: var(--dark);
 }
