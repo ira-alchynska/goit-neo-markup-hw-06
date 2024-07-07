@@ -533,12 +533,12 @@ footer .container {
     gap: 16px;
 }
 
-.socials-item {
+.footer-socials .socials-item {
     width: 40px;
     height: 40px;
 }
 
-.socials-link {
+.footer-socials .socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
