@@ -579,10 +579,11 @@ footer .container {
     width: 264px;
     height: 40px;
     padding-left: 16px; 
+    font-size: 12px;
     border: 1px solid var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: var(--radius);
-    background-color: var(--dark);
+    background-color: transparent;
 }
 
 .footer-form {
@@ -602,7 +603,6 @@ footer .container {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
     text-align: center;
@@ -613,8 +613,16 @@ footer .container {
     box-shadow: 0px 4px 4px 0px #00000026;
     border: transparent;
     min-width: 165px;
+    line-height: 1.5;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.footer-btn-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
 }
 
 .footer .footer-btn:hover,
