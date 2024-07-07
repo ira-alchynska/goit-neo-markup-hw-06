@@ -485,7 +485,7 @@ img {
 
 .footer {
     padding: 100px 0;
-    background: var(--primary-cl);
+    background: var(--dark);
 }
 
 footer .container {
