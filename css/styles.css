@@ -729,7 +729,7 @@ footer .container {
     position: relative;
     margin-bottom: 8px;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17; 
     letter-spacing: 0.04em;
     text-align: left;
     color: var(--secondary-text);
@@ -751,6 +751,11 @@ footer .container {
     left: 16px;
     bottom: 13px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-icon:hover,
+.form-icon:focus {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .form-comment {
@@ -858,17 +863,17 @@ footer .container {
     transition-property: border 250ms var(--function-animation);
 }
 
-.button {
-    display: flex;
-    justify-content: center;
 
-}
 
 .modal-submit-button {
+    margin: 0 auto;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    height: 56px;
     margin-top: 24px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
     background-color: var(--cta);
@@ -884,5 +889,6 @@ footer .container {
 .modal-submit-button:hover,
 .modal-submit-button:focus {
     background-color: var(--active);
-    transition: 250ms var(--function-animation);
+    border: none; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
