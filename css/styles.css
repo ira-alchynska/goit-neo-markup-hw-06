@@ -778,7 +778,7 @@ footer .container {
 }
 
 
-.input-form:focus .form-icon {
+.input-form:focus+.form-icon {
     fill: #4D5AE5;
 }
 
@@ -832,6 +832,8 @@ footer .container {
     text-align: left;
 
 }
+
+
 
 .modal-privacy-link {
     font-family: Roboto;
@@ -892,7 +894,9 @@ footer .container {
     transition-property: border 250ms var(--function-animation);
 }
 
-.input-form:focus+.form-icon {
+
+
+.input-form:focus+.modal-checkbox-icon {
     fill: var(--active);
     transition-property: border 250ms var(--function-animation);
 }
