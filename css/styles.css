@@ -725,7 +725,6 @@ footer .container {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
-
     color: #2E2F42;
 }
 
@@ -779,7 +778,7 @@ footer .container {
 }
 
 
-.input-form .form-icon:focus {
+.input-form:focus .form-icon {
     fill: #4D5AE5;
 }
 
