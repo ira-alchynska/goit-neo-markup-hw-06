@@ -719,6 +719,8 @@ footer .container {
 }
 
 .modal-title {
+    letter-spacing: 0.02em; 
+    margin-bottom: 16px; 
     line-height: 1.5;
     font-weight: 500;
     font-size: 16px;
@@ -733,10 +735,8 @@ footer .container {
 }
 
 .form-box {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -758,28 +758,41 @@ footer .container {
     width: 100%;
     margin-top: 4px;
     height: 40px;
-    padding-left: 42px;
+    padding-left: 38px;
+    outline: transparent;
+    background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    transition: all 250ms var(--function-animation);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.input-form:focus {
+    border-color: #4D5AE5;
 }
 
 .form-icon {
     position: absolute;
+    top: 50%;
     left: 16px;
-    bottom: 13px;
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-icon:hover,
-.form-icon:focus {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.input-form .form-icon:focus {
+    fill: #4D5AE5;
 }
 
 .form-comment {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em; 
     width: 100%;
     margin-top: 4px;
     resize: none;
+    color: rgba(46, 47, 66, 0.4); 
+    background-color: transparent;
+    outline: transparent; 
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -787,7 +800,7 @@ footer .container {
     border-radius: 4px;
     padding: 8px 16px;
     margin-bottom: 16px;
-    transition: border 250ms var(--function-animation);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .form-comment::placeholder {
@@ -796,12 +809,14 @@ footer .container {
     letter-spacing: 0.04em;
     text-align: left;
 }
+.form-comment-box {
+    margin-bottom: 16px;
+}
 
 
 .form-comment:hover,
 .form-comment:focus {
-    outline-color: var(--active);
-    transition: border 250ms var(--function-animation);
+    border-color: #4D5AE5; 
 }
 
 .deal-box {
