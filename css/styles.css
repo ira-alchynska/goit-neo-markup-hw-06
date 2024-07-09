@@ -751,11 +751,8 @@ footer .container {
     position: relative;
 }
 
-
-
 .input-form {
     width: 100%;
-    margin-top: 4px;
     height: 40px;
     padding-left: 38px;
     outline: transparent;
@@ -798,7 +795,6 @@ footer .container {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding: 8px 16px;
-    margin-bottom: 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -908,7 +904,6 @@ footer .container {
     display: block;
     font-family: "Roboto", sans-serif;
     height: 56px;
-    margin-top: 24px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
