@@ -228,11 +228,11 @@ img {
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min--moz-device-pixel-ratio: 2),
-       only screen and (-o-min-device-pixel-ratio: 2/1),
-       only screen and (min-device-pixel-ratio: 2),
-       only screen and (min-resolution: 192dpi),
-       only screen and (min-resolution: 2dppx) {
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
     .hero {
         background-image: url("../images/office2x-mob.jpg");
         background-size: cover;
@@ -240,11 +240,11 @@ img {
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-       (min-width: 768px) and (min--moz-device-pixel-ratio: 2),
-       (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
-       (min-width: 768px) and (min-device-pixel-ratio: 2),
-       (min-width: 768px) and (min-resolution: 192dpi),
-       (min-width: 768px) and (min-resolution: 2dppx) {
+(min-width: 768px) and (min--moz-device-pixel-ratio: 2),
+(min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
+(min-width: 768px) and (min-device-pixel-ratio: 2),
+(min-width: 768px) and (min-resolution: 192dpi),
+(min-width: 768px) and (min-resolution: 2dppx) {
     .hero {
         background-image: url("../images/office2x-tablet.jpg");
         background-size: cover;
@@ -253,11 +253,11 @@ img {
 
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-       (min-width: 1024px) and (min--moz-device-pixel-ratio: 2),
-       (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1),
-       (min-width: 1024px) and (min-device-pixel-ratio: 2),
-       (min-width: 1024px) and (min-resolution: 192dpi),
-       (min-width: 1024px) and (min-resolution: 2dppx) {
+(min-width: 1024px) and (min--moz-device-pixel-ratio: 2),
+(min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1),
+(min-width: 1024px) and (min-device-pixel-ratio: 2),
+(min-width: 1024px) and (min-resolution: 192dpi),
+(min-width: 1024px) and (min-resolution: 2dppx) {
     .hero {
         background-image: url("../images/people-office2x-desktop.jpg");
         background-size: cover;
@@ -267,7 +267,7 @@ img {
 .hero-title {
 
 
-font-size: 36px;
+    font-size: 36px;
 
     font-weight: 700;
     line-height: 1.07;
@@ -549,7 +549,7 @@ footer .container {
     flex-wrap: wrap;
     align-items: baseline;
     gap: 72px 24px;
- 
+
 }
 
 .footer-left {
@@ -1004,8 +1004,8 @@ footer .container {
 
 @media screen and (min-width:768px) {
     .hero {
-            padding: 112px 0;
-            background-image: ("../images/office-tablet1x.jpg");
+        padding: 112px 0;
+        background-image: ("../images/office-tablet1x.jpg");
     }
 
     .container {
@@ -1021,6 +1021,7 @@ footer .container {
         display: flex;
         gap: 40px;
     }
+
     .address-link {
         font-size: 12px;
     }
@@ -1041,9 +1042,9 @@ footer .container {
     }
 
     .team-list {
-    
-        gap:  64px 24px;
-        
+
+        gap: 64px 24px;
+
         justify-content: center;
 
     }
@@ -1059,14 +1060,15 @@ footer .container {
     }
 
     .feature-item-title {
-    
+
         text-align: left;
-   
-    
-    
+
+
+
     }
+
     .portfolio-list {
-       
+
         column-gap: 24px;
         row-gap: 72px;
     }
@@ -1084,7 +1086,7 @@ footer .container {
     } */
 
     footer .container {
-      
+
         gap: 72px 24px;
         padding-left: 108px;
     }
@@ -1108,12 +1110,12 @@ footer .container {
     .hero {
         padding: 112px 0;
         background-image: ("../images/people-office1x-desktop.jpg");
-}
+    }
 
-.hero-title  {
-    font-size: 56px;
-    margin-bottom: 48px;
-}
+    .hero-title {
+        font-size: 56px;
+        margin-bottom: 48px;
+    }
 
     .section {
         padding: 120px 0;
@@ -1128,7 +1130,7 @@ footer .container {
     .team-list {
         display: flex;
         flex-direction: row;
-        gap:  0 24px;
+        gap: 0 24px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -1154,7 +1156,7 @@ footer .container {
     }
 
     .portfolio-list {
-      
+
         column-gap: 24px;
         row-gap: 48px;
     }
@@ -1162,11 +1164,11 @@ footer .container {
     /* team */
 
     .team {
-      
+
         padding: 120px 0;
     }
 
-    
+
 
     .team-item {
         width: calc((100% - 3 * 24px) / 4);
@@ -1219,7 +1221,7 @@ footer .container {
     }
 
     footer .container {
-padding: 0;
+        padding: 0;
         gap: 0px;
     }
 
