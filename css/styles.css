@@ -234,7 +234,9 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .hero {
-        background-image: url("../images/office2x-mob.jpg");
+        
+        background:  linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url("../images/office2x-mob.jpg");
         background-size: cover;
     }
 }
@@ -246,7 +248,8 @@ only screen and (min-resolution: 2dppx) {
 (min-width: 768px) and (min-resolution: 192dpi),
 (min-width: 768px) and (min-resolution: 2dppx) {
     .hero {
-        background-image: url("../images/office2x-tablet.jpg");
+        background:  linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url("../images/office2x-tablet.jpg");
         background-size: cover;
     }
 }
@@ -259,7 +262,8 @@ only screen and (min-resolution: 2dppx) {
 (min-width: 1024px) and (min-resolution: 192dpi),
 (min-width: 1024px) and (min-resolution: 2dppx) {
     .hero {
-        background-image: url("../images/people-office2x-desktop.jpg");
+        background:  linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url("../images/people-office2x-desktop.jpg");
         background-size: cover;
     }
 }
@@ -1117,6 +1121,10 @@ footer .container {
         margin-bottom: 48px;
     }
 
+    .address-link {
+        font-size: 16px;
+    }
+
     .section {
         padding: 120px 0;
     }
@@ -1125,6 +1133,11 @@ footer .container {
         max-width: 1158px;
         padding: 0 15px;
         margin: 0 auto;
+    }
+
+    .feature-item-text {
+        font-weight: 400;
+      
     }
 
     .team-list {
