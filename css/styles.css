@@ -140,6 +140,11 @@ img {
 
 .header-menu-btn {
     display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 24px;
+    height: 24px;
 }
 
 
@@ -210,10 +215,11 @@ img {
 .hero {
     margin: 0 auto;
     max-width: 1440px;
-    padding: 188px 0;
+    padding: 72px 0;
+
     background: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url("../images/people-office.jpg");
+        url("../images/office1x-mob.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -222,25 +228,54 @@ img {
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-    .background-image {
-        background-image: url('../images/people-office@2.jpg');
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url("../images/office2x-mob.jpg");
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+       (min-width: 768px) and (min--moz-device-pixel-ratio: 2),
+       (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
+       (min-width: 768px) and (min-device-pixel-ratio: 2),
+       (min-width: 768px) and (min-resolution: 192dpi),
+       (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url("../images/office2x-tablet.jpg");
+        background-size: cover;
+    }
+}
+
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+       (min-width: 1024px) and (min--moz-device-pixel-ratio: 2),
+       (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1),
+       (min-width: 1024px) and (min-device-pixel-ratio: 2),
+       (min-width: 1024px) and (min-resolution: 192dpi),
+       (min-width: 1024px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url("../images/people-office2x-desktop.jpg");
+        background-size: cover;
     }
 }
 
 .hero-title {
-    font-size: 56px;
+
+
+font-size: 36px;
+
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
     max-width: 496px;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .hero-button {
@@ -293,13 +328,14 @@ only screen and (min-resolution: 2dppx) {
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.02em;
-    text-align: left;
+    text-align: center;
     color: var(--dark);
 
 
 }
 
 .feature-item-text {
+    font-weight: 500;
     letter-spacing: 0.02em;
 }
 
@@ -326,7 +362,7 @@ only screen and (min-resolution: 2dppx) {
 
 .team {
     background-color: var(--light-bgc);
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .team-title {
@@ -343,7 +379,7 @@ only screen and (min-resolution: 2dppx) {
 .team-list {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 72px 0;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -426,15 +462,15 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 72px;
 }
 
 .portfolio-list-item {
@@ -512,12 +548,13 @@ footer .container {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    row-gap: 72px;
+    gap: 72px 24px;
+ 
 }
 
 .footer-left {
     max-width: 288px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .footer-logo {
@@ -536,7 +573,7 @@ footer .container {
 
 
 .footer-middle {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 208px;
 }
 
@@ -966,6 +1003,10 @@ footer .container {
 
 
 @media screen and (min-width:768px) {
+    .hero {
+            padding: 112px 0;
+            background-image: ("../images/office-tablet1x.jpg");
+    }
 
     .container {
         max-width: 768px;
@@ -979,6 +1020,9 @@ footer .container {
     .nav-list {
         display: flex;
         gap: 40px;
+    }
+    .address-link {
+        font-size: 12px;
     }
 
     .address-list {
@@ -997,7 +1041,9 @@ footer .container {
     }
 
     .team-list {
-
+    
+        gap:  64px 24px;
+        
         justify-content: center;
 
     }
@@ -1012,6 +1058,19 @@ footer .container {
 
     }
 
+    .feature-item-title {
+    
+        text-align: left;
+   
+    
+    
+    }
+    .portfolio-list {
+       
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
     .footer-form {
         margin: 0;
         width: 456px;
@@ -1020,8 +1079,14 @@ footer .container {
         gap: 24px;
     }
 
-    .sign {
+    /* .sign {
         margin-left: 70px;
+    } */
+
+    footer .container {
+      
+        gap: 72px 24px;
+        padding-left: 108px;
     }
 
     .subscribe-title {
@@ -1040,6 +1105,16 @@ footer .container {
 
 @media screen and (min-width:1158px) {
 
+    .hero {
+        padding: 112px 0;
+        background-image: ("../images/people-office1x-desktop.jpg");
+}
+
+.hero-title  {
+    font-size: 56px;
+    margin-bottom: 48px;
+}
+
     .section {
         padding: 120px 0;
     }
@@ -1048,6 +1123,14 @@ footer .container {
         max-width: 1158px;
         padding: 0 15px;
         margin: 0 auto;
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        gap:  0 24px;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     /* header */
@@ -1070,7 +1153,20 @@ footer .container {
         width: calc((100% - 48px) / 3);
     }
 
+    .portfolio-list {
+      
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
     /* team */
+
+    .team {
+      
+        padding: 120px 0;
+    }
+
+    
 
     .team-item {
         width: calc((100% - 3 * 24px) / 4);
@@ -1110,6 +1206,11 @@ footer .container {
 
     }
 
+    .portfolio {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
 
     /* footer */
     .footer-left {
@@ -1118,8 +1219,8 @@ footer .container {
     }
 
     footer .container {
-
-        row-gap: 0px;
+padding: 0;
+        gap: 0px;
     }
 
     .footer-form {
